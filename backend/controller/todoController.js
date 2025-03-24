@@ -48,8 +48,8 @@ const updateTodo = async (req, res) => {
     new: true,
   });
 
-  if (updateTodo) {
-    res.status(200).json(updateTodo);
+  if (updatedTodo) {
+    res.status(200).json(updatedTodo);
   } else {
     res.status(500).json({
       msg: "Todo not Updated ",
